@@ -1,0 +1,27 @@
+cloud:
+  aws:
+    credentials:
+      access-key: ASIA53PP3UQLWGZVOWX6
+      secret-key: q8b4hn292/LfmnuJHPek0/9XGnNGaEwIqpncbcSM
+    region:
+      static: us-east-2
+    stack:
+      auto: false
+
+application:
+  bucket:
+    name: jtf-lambda-s3-bucket
+
+  # SET AWS_ACCESS_KEY_ID=ASIA53PP3UQLX5YL2OUL
+  # SET AWS_SECRET_ACCESS_KEY=aywRie6Vzfw9LB1uZawGEw2f4XSS4XKcFr9Rj9I9
+  # SET AWS_SESSION_TOKEN=IQoJb3JpZ2luX2VjEKr//////////wEaCXVzLWVhc3QtMiJIMEYCIQCqrym4EJowGdianSQ0I/WBy7lCbOshmiKzFkBVIqxl+QIhAKSsXzbZOqVMf5TDOuEL6zTzh//yhZ5VSSzhIwYMytY7KpkDCBMQARoMOTUyMzc1MTU3NzgzIgxm82O+jj35XN1J5jwq9gJ7jRbFWuBjOwUy3ves6YdzOz2B/06ZLGshzR9/ujfAWqO+CtmtJTE3RUZ1fRk4tMQ9vyJcxxiecei9z0gaV28eEGkRqtWcTCPk+4NgSA8OUMriut+K6X3H1hEPSQFggCp1y6CbMqj0Z2eUzS8378Cd67OHIJsuxs6/MMOi/B8c6Tgt/p8eaSFAZ8fAVBnzO8qjN8k8T0hCwMoTM7si10y4Oly+XUS9F2sQS1ZXFqUtTMiyYmBFs/2Qgq5KOUv6gpuFYOF6cmAdS6HM+4+3lXbKIqeMGVidoR7ddg7YPesUjOjqjdtFxw/u+m7Hxh0eIyEkgjuyKW++kVtmI7oB5O0n+9+/ax1nJj2B6D/mgGp0UE3Lwfq0uq6Uu6DsZ2USpwpW0En57hC2brS5aEBc929iTo/Kk62En7MKrcDBGm4LWGqG9CTaJMjw3QQrC3px1CO2NKRbYLjUCop7U1xU5e28CDvZ+a+AXpjSUoUDyjeXMkAG4STK9jDt46arBjqlAcn2oagT2y+IPKbgszsrSuTmJ+HhiA03kUlUjUR1DDtlNdO2MR7YH4Lc737t02W0zQdNcsz/MciDrd+MyY12gS95xGp/3sjxNuLJQFozYdi5BhH1T9TT1J8EbOhdq6OMDvHkCqlcB+QhEJQfAKQc0GS1qOuvyWDGNOMxcKvRw+w5ffAwzrrTdMhCo3DgsX4I8nh0MVhnq/Fap0YZOInx4BIeScjVlA==
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2MB
+      max-file-size: 5MB
+      max-request-size: 10MB
+
+server:
+  port: 9090
